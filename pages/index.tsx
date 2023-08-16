@@ -47,7 +47,7 @@ export default function Index() {
       return;
     }
 
-    const car = data.find((car: any) => car.MISPAR_RECHEV.includes(search));
+    const car = data.find((car: any) => car.MISPAR_RECHEV === parseInt(search));
 
     setDetails(car ? car : "רכב זה לא נדרש לעשות ריקול");
 
